@@ -1,0 +1,18 @@
+import numpy as np
+import scipy
+
+
+class Markov(object):
+    """A class implementing a markov chain
+    """
+
+    def __init__(self, corpi):
+        self.transitions = None
+        self.words = {}
+        self.word_count = 0
+        #file objects
+        self.corpi = corpi
+
+    def preprocess(self):
+
+
